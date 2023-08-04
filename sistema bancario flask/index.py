@@ -59,6 +59,8 @@ def transferir(valor, destino):
 def home():
     global saldo, limite, extrato_str, numero_saques
 
+    mensagem = ""  # Valor padrão vazio
+
     if request.method == "POST":
         opcao = request.form.get("opcao")
 
